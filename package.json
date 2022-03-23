@@ -1,6 +1,6 @@
 {
     "name": "fabricforreact",
-    "version": "1.0.0",
+    "version": "1.0.2",
     "description": "This package has been made from core \"fabric.js\" library to have some functionality seperately and easily accessable",
     "main": "dist/index.js",
     "module": "dist/index.modern.js",

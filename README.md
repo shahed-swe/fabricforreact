@@ -1,12 +1,10 @@
-# reactfabric
+# fabricforreact
 
 > support fabricjs from react
 
-[![NPM](https://img.shields.io/npm/v/fabricjs-react.svg)](https://www.npmjs.com/package/fabricjs-react) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
-
 ## Install
 
-We'll need to install `fabric`, `react` and `react-dom` because are peer dependencies of this library if you haven't yet otherwise install only what you don't have:
+We'll need to install `react` and `react-dom` because are peer dependencies of this library if you haven't yet otherwise install only what you don't have:
 ```bash
 npm install fabricforreact
 ```
