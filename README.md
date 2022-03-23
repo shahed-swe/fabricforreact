@@ -52,7 +52,7 @@ zoonOut() -> To zoom out selected element from canvas
 
 ## Alternative use cases
 
-### Add image ([#3](https://github.com/asotog/fabricjs-react/issues/3))
+### Add image ([#3]
 For this case, you have to reference the FabricJS dependency to first load the image:
 
 Feel free to collaborate.
