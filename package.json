@@ -1,6 +1,6 @@
 {
     "name": "fabricforreact",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "description": "This package has been made from core \"fabric.js\" library to have some functionality seperately and easily accessable",
     "main": "dist/index.js",
     "module": "dist/index.modern.js",
@@ -68,10 +68,10 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/shahed-swe/reactfabric.git"
+        "url": "git+https://github.com/shahed-swe/fabricforreact.git"
     },
     "bugs": {
-        "url": "https://github.com/shahed-swe/reactfabric/issues"
+        "url": "https://github.com/shahed-swe/fabricforreact/issues"
     },
-    "homepage": "https://github.com/shahed-swe/reactfabric#readme"
+    "homepage": "https://github.com/shahed-swe/fabricforreact#readme"
 }
