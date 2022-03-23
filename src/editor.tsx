@@ -9,8 +9,8 @@ export interface FabricJSEditor {
     addCircle: () => void
     addRectangle: () => void
     addLine: () => void
+    addImage: (text: string) => void
     addText: (text: string) => void
-    updateText: (text: string) => void
     deSelectAll: () => void
     deleteAll: () => void
     deleteSelected: () => void
@@ -58,18 +58,15 @@ const buildEditor = (
             })
             canvas.add(object)
         },
+        addImage: (text: string) => {
+            fabric.Image.fromURL(text, (img) => {
+                canvas.add(img)
+            })
+        },
         addText: (text: string) => {
             const object = new fabric.Textbox(text, { ...TEXT, fill: strokeColor })
             object.set({ text: text })
             canvas.add(object)
-        },
-        updateText: (text: string) => {
-            const objects: any[] = canvas.getActiveObjects()
-            if (objects.length && objects[0].type === TEXT.type) {
-                const textObject: fabric.Textbox = objects[0]
-                textObject.set({ text })
-                canvas.renderAll()
-            }
         },
         deSelectAll: () => {
             canvas.discardActiveObject()

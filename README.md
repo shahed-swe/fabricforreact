@@ -8,17 +8,15 @@
 
 We'll need to install `fabric`, `react` and `react-dom` because are peer dependencies of this library if you haven't yet otherwise install only what you don't have:
 ```bash
-npm install --save fabricjs-react fabric react react-dom
+npm install fabricforreact
 ```
 
 ## Usage
 
-Take a look at sandbox: https://codesandbox.io/s/flamboyant-wind-ff3x8
-
 ```tsx
 import React from 'react'
 
-import { FabricJSCanvas, useFabricJSEditor } from 'fabricjs-react'
+import { FabricJSCanvas, useFabricJSEditor } from 'fabricforreact'
 
 const App = () => {
   const { editor, onReady } = useFabricJSEditor()
@@ -38,30 +36,25 @@ const App = () => {
 
 export default App
 ```
+## Methods
+```
+addCircle() -> To add a circle
+addRectangle() -> To add rectangle
+addLine() -> To add new line
+addImage() -> To add new Image
+addText() -> To add new text
+deSelectAll() -> To DeSelectAll Element
+deleteAll() -> To Delete All Elements
+deleteSelected() -> To Delete Selected Elements
+setFillColor() -> To fill colors on shapes
+setStrokeColor() -> To set colors on stroke
+zoomIn() -> To zoom selected elements from canvas
+zoonOut() -> To zoom out selected element from canvas
+```
 
 ## Alternative use cases
 
 ### Add image ([#3](https://github.com/asotog/fabricjs-react/issues/3))
 For this case, you have to reference the FabricJS dependency to first load the image:
 
-```tsx
-import { fabric } from 'fabric'; // this also installed on your project
-import { useFabricJSEditor } from 'fabricjs-react';
-
-const { selectedObjects, editor, onReady } = useFabricJSEditor();
-useEffect(() => {
-  fabric.Image.fromURL('my_image.png', function (oImg) {
-    editor?.canvas.add(oImg);
-  });
-}, [fabric, editor])
-...
-```
-## License
-
-MIT © [Alejandro Soto](https://github.com/Alejandro Soto)
-
 Feel free to collaborate.
-
-## Some Support
-
-https://www.buymeacoffee.com/alecode

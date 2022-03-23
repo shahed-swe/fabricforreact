@@ -1,5 +1,5 @@
 {
-    "name": "reactfabric",
+    "name": "fabricforreact",
     "version": "1.0.0",
     "description": "This package has been made from core \"fabric.js\" library to have some functionality seperately and easily accessable",
     "main": "dist/index.js",
@@ -62,5 +62,16 @@
     "license": "ISC",
     "files": [
         "dist"
-    ]
+    ],
+    "directories": {
+        "example": "example"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/shahed-swe/reactfabric.git"
+    },
+    "bugs": {
+        "url": "https://github.com/shahed-swe/reactfabric/issues"
+    },
+    "homepage": "https://github.com/shahed-swe/reactfabric#readme"
 }
